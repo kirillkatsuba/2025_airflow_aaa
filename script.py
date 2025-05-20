@@ -58,7 +58,7 @@ def get_als_pred(users, nodes, user_to_pred):
     sparse_matrix = csr_matrix((values, (rows, cols)), shape=(len(user_ids), len(item_ids)))
 
     model = implicit.als.AlternatingLeastSquares(
-        iterations=1,
+        iterations=10,
         factors=60,
         use_gpu=False,
     )
@@ -112,14 +112,11 @@ def recall_at(df_true, df_pred, k=40):
         ]
     )['value'].mean()
 
-
-EXPERIMENT_NAME = "homework-admastryukov"
+EXPERIMENT_NAME = "homework-kokatsuba"
 
 
 def main():
-    mlflow.set_tracking_uri(
-        os.environ.get('MLFLOW_TRACKING_URI')
-    )
+    mlflow.set_tracking_uri('http://51.250.35.156:5000/')
 
     if not mlflow.get_experiment_by_name(EXPERIMENT_NAME):
         mlflow.create_experiment(EXPERIMENT_NAME, artifact_location='mlflow-artifacts:/')

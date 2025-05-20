@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/dd2d47690df3436da074025c7e271eff/artifacts
+end_time: 1747752848680
+entry_point_name: ''
+experiment_id: '753132373964850675'
+lifecycle_stage: active
+run_id: dd2d47690df3436da074025c7e271eff
+run_name: capable-cat-806
+run_uuid: dd2d47690df3436da074025c7e271eff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747752709578
+status: 3
+tags: []
+user_id: kirill

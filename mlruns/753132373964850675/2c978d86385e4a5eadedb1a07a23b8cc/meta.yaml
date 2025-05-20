@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/2c978d86385e4a5eadedb1a07a23b8cc/artifacts
+end_time: 1747752416119
+entry_point_name: ''
+experiment_id: '753132373964850675'
+lifecycle_stage: active
+run_id: 2c978d86385e4a5eadedb1a07a23b8cc
+run_name: masked-snipe-190
+run_uuid: 2c978d86385e4a5eadedb1a07a23b8cc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747752272532
+status: 3
+tags: []
+user_id: kirill
