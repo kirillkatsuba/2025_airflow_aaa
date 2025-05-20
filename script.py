@@ -116,7 +116,9 @@ EXPERIMENT_NAME = "homework-kokatsuba"
 
 
 def main():
-    mlflow.set_tracking_uri('http://51.250.35.156:5000/')
+    mlflow.set_tracking_uri(
+        os.environ.get('MLFLOW_TRACKING_URI')
+    )
 
     if not mlflow.get_experiment_by_name(EXPERIMENT_NAME):
         mlflow.create_experiment(EXPERIMENT_NAME, artifact_location='mlflow-artifacts:/')
